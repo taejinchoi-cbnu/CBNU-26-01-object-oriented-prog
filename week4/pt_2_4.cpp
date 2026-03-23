@@ -1,10 +1,10 @@
 #include <iostream>
-#include <vector>
+#include <cstring>
 using namespace std;
 
 char &find(char a[], char c, bool &success)
 {
-    size_t length = sizeof(a) / sizeof(a[0]);
+    int length = strlen(a);
     for (int i = 0; i < length; i++)
     {
         if (a[i] == c)
@@ -14,6 +14,7 @@ char &find(char a[], char c, bool &success)
         }
     }
     success = 0;
+    return a[0];
 }
 
 int main()
@@ -28,4 +29,5 @@ int main()
     }
     loc = 'm';         // 'M' 위치에 'm' 기록
     cout << s << endl; // "mike"가 출력됨
+    return 0;
 }
