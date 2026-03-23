@@ -1,0 +1,24 @@
+# Compiled binaries
+*.out
+*.exe
+*.o
+*.obj
+
+# Executables without extension (Linux/Mac compiled binaries)
+week2/test
+week2/me
+week2/name
+week2/star
+week2/repeat
+week3/pt_*[!.cpp]
+week4/pt_*[!.cpp]
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.dSYM/
