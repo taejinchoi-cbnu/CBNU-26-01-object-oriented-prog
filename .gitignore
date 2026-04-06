@@ -12,6 +12,7 @@ week2/star
 week2/repeat
 week3/pt_*[!.cpp]
 week4/pt_*[!.cpp]
+week*/pt_*[!.cpp]
 
 # VS Code
 .vscode/
