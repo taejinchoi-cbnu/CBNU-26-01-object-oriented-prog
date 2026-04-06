@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void f(char c = ' ', int line = 1);
-
 void f(char c = ' ', int line = 1)
 {
 
