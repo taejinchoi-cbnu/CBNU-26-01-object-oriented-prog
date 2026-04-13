@@ -7,18 +7,11 @@ class MyVector
     int size;
 
 public:
-    MyVector();
-    MyVector(int n, int val);
+    MyVector(int n = 5, int val = 0);
     ~MyVector() { delete[] mem; }
     void show();
 };
-MyVector::MyVector()
-{
-    mem = new int[5];
-    size = 5;
-    for (int i = 0; i < size; i++)
-        mem[i] = 0;
-}
+
 MyVector::MyVector(int n, int val)
 {
     mem = new int[n];
