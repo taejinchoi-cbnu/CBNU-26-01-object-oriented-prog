@@ -6,9 +6,7 @@ T add(T a[], int len)
 {
     T sum = 0;
     for (int i = 0; i < len; i++)
-    {
         sum += a[i];
-    }
     return sum;
 }
 
@@ -17,6 +15,10 @@ int main(void)
     int x[] = {1, 2, 3, 4, 5};
     double d[] = {1.2, 2.3, 3.4, 4.5, 5.6, 6.7};
 
-    cout << add(x, 5) << endl;
-    cout << add(d, 6) << endl;
+    // float f[] = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6};
+
+    cout << "sum of x[] = " << add(x, 5) << endl;
+    cout << "sum of d[] = " << add(d, 6) << endl;
+
+    // cout << "sum of f[] = " << add(f, 6) << endl;
 }

@@ -2,14 +2,12 @@
 using namespace std;
 
 template <class T>
-void reverseArray(T arr[], int len)
+void reverseArray(T arr[], size_t len)
 {
-    int j = len - 1;
+    size_t j = len - 1;
     for (int i = 0; i < j; i++)
     {
-        T temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        swap(arr[i], arr[j]);
         j--;
     }
 }
