@@ -3,10 +3,10 @@ using namespace std;
 
 class Rectangle
 {
-private:
-    int width, height;
 
 public:
+    int width = 1;
+    int height = 1;
     // Rectangle(int x = 3, int y = 3);
     Rectangle();
     Rectangle(int x);
@@ -26,8 +26,6 @@ public:
 
 Rectangle::Rectangle()
 {
-    width = 3;
-    height = 3;
 }
 
 Rectangle::Rectangle(int x)
@@ -40,6 +38,10 @@ Rectangle::Rectangle(int x, int y)
 {
     width = x;
     height = y;
+}
+
+Rectangle::~Rectangle()
+{
 }
 
 bool Rectangle::isSquare()

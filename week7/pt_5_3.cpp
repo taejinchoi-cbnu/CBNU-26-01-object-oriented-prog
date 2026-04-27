@@ -7,7 +7,7 @@ class MyVector
     int size;
 
 public:
-    MyVector(int n = 5, int val = 0);
+    MyVector(int n = 5, int val = 0); // 디폴트 인자는 선언부에서만 쓰면 됨
     ~MyVector() { delete[] mem; }
     void show();
 };
